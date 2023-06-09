@@ -7,6 +7,7 @@ public class subarray {
             for( int j=i ;j<numbers.length;j++){
                 for(int k=i;k<=j;k++){
                     System.out.print(numbers[k]+ "");
+                    
                 }
                 System.out.println();
             }
