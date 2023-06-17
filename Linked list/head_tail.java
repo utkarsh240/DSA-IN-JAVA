@@ -40,10 +40,10 @@ public class head_tail {
     public void print(){
         Node temp = head;
         while(temp != null){
-            System.out.print(temp.data+" ");
+            System.out.print(temp.data+"->");
             temp=temp.next;
         }
-        System.out.println();
+        System.out.println("null");
     }
         public static void main(String[] args) {
             head_tail ll = new head_tail();
