@@ -70,6 +70,25 @@ public class add_value {
         temp.next= newNode;
     }
 
+    public int removeFirst(){
+
+        if (size==0){
+            System.out.println("ll is empty");
+            return Integer.MIN_VALUE;
+        }
+
+        else if(size==1){
+            int val = head.data;
+            head = Tail = null;
+            return val;
+        }
+        
+        int val = head.data;
+        head = head.next;
+        return val;
+
+    }
+
         public static void main(String[] args) {
             add_value ll = new add_value();
             ll.addfirst(54);
@@ -79,6 +98,9 @@ public class add_value {
             ll.addpos(2, 1);
             ll.print();
             System.out.println(ll.size);
+
+            ll.removeFirst();
+            ll.print();
 
             
         }

@@ -1,20 +1,26 @@
 public class fibo {
 
-    static int fibonum( int n){
+    public static int fiboo(int n){
 
-        if(n<2){
-            return n;
+        if (n==0){
+            return 0;
         }
 
-        return fibonum(n-1)+ fibonum(n-2);
+        if (n==1){
+            return 1;
+        }
+
+        int fib = fiboo(n-1) + fiboo(n-2);
+        return fib;
     }
+
+
+
 
     public static void main(String[] args) {
-
-        int n = 6;
-
-
-        System.out.println(fibonum(n));
+        int n=50;
+        System.out.println(fiboo(n));
 
     }
+    
 }
