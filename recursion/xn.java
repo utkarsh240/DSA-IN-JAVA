@@ -3,11 +3,12 @@ public class xn {
     public static int powerx(int x , int n){
 
         if(n==0){
-            return -1;
+            return 1;
         }
 
-        int pow= x*powerx(x, n-1);
-        return powerx(x, n);
+        int xnm1 = powerx(x, n-1);
+        int xn = x * xnm1;
+        return xn;
     }
 
     public static void main(String[] args) {
